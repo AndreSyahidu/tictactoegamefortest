@@ -1,0 +1,79 @@
+#display {
+  display: grid;
+  grid-template-columns: repeat(3, 180px) ;
+  grid-template-rows: repeat(3, 150px); 
+}
+
+.slot {
+  cursor: pointer;
+  font-size: 5em;
+}
+
+#slot0 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#slot1 {
+  border-bottom: 2px solid black;
+}
+
+#slot2 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#slot3 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#slot4 {
+  border-bottom: 2px solid black;
+}
+
+#slot5 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#slot6 {
+  border-right: 2px solid black;
+}
+
+#slot8 {
+  border-left: 2px solid black;
+}
+
+#cover {
+  position: absolute;
+  opacity: 0.9;
+  width: 540px;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  background: #f5deb3;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  margin: 15px;
+}
+
+#go-btn {
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.9; }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
